@@ -1,5 +1,5 @@
 {
-  "name": "snpsht",
+  "name": "snpsht", /* or "@floor/snpsht" if you want a scoped packag
   "version": "0.1.0",
   "description": "Generate static snapshots from sitemap.xml for JavaScript web applications",
   "type": "module",
@@ -18,10 +18,10 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "bun build.js",
-    "prepare": "bun build.js",
+    "build": "bun x tsc",
+    "prepare": "bun run build",
     "test": "bun test",
-    "prepublishOnly": "bun build.js"
+    "prepublishOnly": "bun run build"
   },
   "keywords": [
     "seo",
